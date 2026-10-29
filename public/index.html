@@ -8,53 +8,69 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!--this is more or less copied from sixey.es. thanks!-->		
 		<style>
-			body {
-			    font-family: "IBM Plex Mono", monospace;
-				margin: 0;
-				background-image: url("https://dram.nekoweb.org/images/dredgeBGtile.PNG")
-			}
-
-			#container {
-                max-width: 1000px;
-                margin: 0 auto;
-                /* this centers the entire page */    
+			html, body {
+        	padding: 0;
+            margin: 0;
             }
 
-            main {
+            body {
+                background-position: center;
+                background-attachment: fixed;
+				background-image: url("https://dram.nekoweb.org/images/dredgeBGtile.PNG");
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 16px;
+            }
+
+            .everything {
+                display: grid;
+                grid-template-columns: auto 153px;
+                width: max-content;
+                position: relative;
+                z-index: 100;
+            }
+
+            .main {
+                display: grid;
+                grid-template-columns: 88px 1fr;
+                width:850px;
                 background-color: white;
-                flex: 1;
-                padding: 20px;
-                order: 2;
-                padding-bottom: 30px;
-                outline: midnightblue solid 3px;
-				margin: 100px;
+                padding:10px;
+                margin: 30px 0 30px 100px;
+                column-gap: 10px;
+                border: 5px solid midnightblue;
+                /*border-image: url("_ui23/spring.png") 32 32 repeat; will replace lata*/
+                position: relative;
             }
+
+			.title {
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
 		</style>
 	</head>
 	
 	<body>
-		<div id="container">
-			<main>
+		<div class="everything">
+			<div class="main">
+				<div class="title">
 				<img src= "images/dramthedredgefinalLOGO.png">
-			   <marquee>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome Brigador&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunrise, Parrabellum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Howdy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome Aboard, Captain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lets ROCK!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konichiwaaaa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧</marquee></div>
-				<main>
-				<p>
-				DRAM!
-				<br />
-				<i>the dredge
-
-                    we are testing shit out babbbby
-                </i>
-				</p>
-				<br>
-				<p>The hopeful begginings of a eventual site. who can say.</p>
-				<a href="https://nekoweb.org/">
-				<img src="https://nekoweb.org/assets/buttons/button5.gif" />
-				</main>
-				</a>
-			</main>
+			   
+				<marquee>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome Brigador&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunrise, Parrabellum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Howdy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome Aboard, Captain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lets ROCK!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konichiwaaaa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧</marquee>
+				</div>
+				<div><a href="https://nekoweb.org/"> <img src="https://nekoweb.org/assets/buttons/button5.gif" /></a>
+				<img src="images/iwishicouldgobackintime.gif" />
+				<a href="https://sixey.es"> <img src="images/sixeyes-dogstar-bleached.png" /></a>
+				<a href="https://wiby.me"> <img src="images/wiby.gif" /></a>
+				<a href="https://vivaldi.com"> <img src="images/vivaldi.gif" /></a>
+				</div>
+				
+				<div>
+				<p>The hopeful begginings of a eventual site. who can say. certaintly not me.</p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
