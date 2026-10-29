@@ -1,3 +1,9 @@
 whazzap
 test
 triple
+
+phosimp codes
+22 - funky color cool
+23 - slight blur
+25 - funky spread out blur its cool not for text
+41 - cool
